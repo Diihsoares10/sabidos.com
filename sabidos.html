@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="sabidos.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="shortcut icon" href="imagens/favicon-16x16.png" type="image/x-icon">
+    <title>Sabidos.com</title>
+</head>
+<body>
+    <header> 
+        <a href="sabidos.html"><img class="logo" src="imagens/sabidoslogo.jpg" width="100px" margin-left="10px" alt=""></a>
+        <h1>SABIDOS.COM</h1>
+        <nav class="navegacao">
+            <a href="historia.html">História</a>
+            <a href="atletas.html">Atletas</a>
+            <a href="padrão.html">Padrão</a>
+            <a href="artilharia.html">Artilharia</a>
+        </nav>
+    </header>
+
+    <hr>
+    <h4>Tema:</h4> <br>
+    <button id="bt1" type="button" onclick="tema('n')">Verde</button>
+    <button id="bt2" type="button" onclick="tema('')">Rosa</button>
+    <button id="bt3" type="button" onclick="tema('')">Preto</button>
+    <h1>PLACAR ATUAL</h1>
+    <div class="placar">
+        <h1>0</h1> <h1>X</h1> <h1>0</h1>
+    </div>
+    <div class="container">
+        <img src="imagens/rosa.png" alt="" width="300px">
+        <img src="imagens/verde.png" alt="" width="300px">
+    </div>
+
+    <div class="placares">
+        <select name="placares" id="">
+        <option value="">RODADA 1</option>
+        <option value="">RODADA 2</option>
+        <option value="">RODADA 3</option>
+        <option value="">RODADA 4</option>
+        <option value="">RODADA 5</option>
+        <option value="">RODADA 6</option>
+        <option value="">RODADA 7</option>
+        <option value="">RODADA 8</option>
+        <option value="">RODADA 9</option>
+        <option value="">RODADA 10</option>
+        <option value="">RODADA 11</option>
+        <option value="">RODADA 12</option>
+        <option value="">RODADA 13</option>
+        <option value="">RODADA 14</option>
+        <option value="">RODADA 15</option>
+        <option value="">RODADA 16</option>
+        <option value="">RODADA 17</option>
+        <option value="">RODADA 18</option>
+        <option value="">RODADA 19</option>
+        <option value="">RODADA 20</option>
+        <option value="">RODADA 21</option>
+        </select>
+    </div>
+    <hr>
+    <!-- footer entra aqui-->
+    <footer class="footer-distributed">
+
+        <div class="footer-right">
+
+            <a href="#"><i class="fa fa-instagram"></i></a>
+
+        </div>
+        <div class="footer-left">
+            <p class="footer-links">
+                <a class="link-1" href="sabidos.html">Home</a>
+
+                <a href="#">Fale conosco</a>
+
+                <a href="#">Dúvidas</a>
+
+                <a href="#">Contato</a>
+            </p>
+            <p>Sabidos.com &copy; 2023</p>
+        </div>
+    </footer>
+    
+    <script>
+        function tema(backgroundColor) {
+            document.body.style.backgroundColor = backgroundColor;
+        }
+
+        var bt1 = document.getElementById("bt1");
+        var bt2 = document.getElementById("bt2");
+        var bt3 = document.getElementById("bt3");
+
+        bt1.addEventListener("click", function () {
+            tema("green");
+        });
+
+        bt2.addEventListener("click", function () {
+            tema("pink");
+        });
+
+        bt3.addEventListener("click", function () {
+            tema("black");
+        });
+    </script>
+</body>
+</html>
